@@ -16,14 +16,11 @@ Visando as melhores práticas para desenvolvimento de uma API, este projeto cont
 
 ## Execução correto em linguaguens
 
-Para executar a DLL é necessário adaptar dentro da pasta do sistema 
+Para executar a DLL ser executada como componente visivel em linguaguens diversas como Visual Basic, Delphi , FoxPro necessário corrigir o caminho do sistema no arquivo BAT:
 
-Se for registrada como componente visivel para utilizando em linguaguens diversas como Visual Basic, Delphi , FoxPro necessário:
+Registrar arquivo .BAT 
 
 ```bash
-	
-	Ajustar caminho de diretório do sistema e Registrar a DLL conforme arquivo .BAT 
-	
 	@ECHO OFF
 	echo %cd%
 	C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe D:\DLLTeste3\DLLTeste3\Foxpro\DLLTeste3.dll /codebase /tlb

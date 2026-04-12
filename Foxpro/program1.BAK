@@ -1,0 +1,19 @@
+CLEAR
+set proc to "..\nfjsonread"
+
+lo = CREATEOBJECT("DLLTeste3.Cotacao")
+lo.AddCotacao(10.53) 
+lo.AddCotacao(28.55)
+lo.AddCotacao(26.99)
+
+IF lo.GetCotacaoCount > 0 
+ ?"Numero de Registros" + STR(lo.GetCotacaoCount)
+ENDIF 
+
+resultado = lo.Estatistica()
+
+vfpobj = nfJsonRead(resultado)
+?"Primeiro Quartil" + STR(vfpobj.PrimeiroQuartil,9,10)
+?"Terceiro Quartil" + STR(vfpobj.TerceiroQuartil,9,10)
+ 
+RELEASE lo 

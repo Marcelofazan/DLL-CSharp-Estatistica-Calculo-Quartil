@@ -9,8 +9,9 @@ Exemplo de criação de um componente DLL em Csharp para ser utilizado em Csharp
 # O que você vai encontrar neste projeto
 
 Visando as melhores práticas para desenvolvimento de uma API, este projeto conta com as seguintes tecnologias:
-- **FoxPro** - Utilização do uso como componente.
+- **FoxPro** - Utilização do uso como componente, chamando a DLL e retornando Dados Json.
 - **DLL** - Criação de DLL em Csharp
+- **Json** - Uso Calculo em Csharp e Serealização para ser lido e descerealizado por outras linguaguens   
 - **COM** - Uso de Componentes Objetos COM/ActiveX , DLLs. DLLs .NET que precisam ser chamadas pelo rundll32 que devem ter classes ComVisible(true) e ser registradas com regasm.exe para interoperação
 
 

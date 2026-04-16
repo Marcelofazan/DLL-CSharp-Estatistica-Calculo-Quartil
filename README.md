@@ -22,6 +22,6 @@ A DLL deve ser registrada com o seguinte .BAT, necessário ajustar diretório do
 	EXIT
 ```
 
-# Calculo Quartil
+### Cálculo do Quartil
 
 Os quartis são medidas estatísticas que dividem um conjunto de dados ordenados (do menor para o maior) em quatro partes iguais, cada uma contendo 25% dos dados. Eles são fundamentais para entender a distribuição e a dispersão dos dados, indo além do que uma simples média pode mostrar.

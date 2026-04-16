@@ -1,24 +1,21 @@
-# DLL Quartil
+# DLL-CSharp-Estatistica-Calculo-Quartil
 
-Exemplo de criação de um componente DLL em Csharp para ser utilizado em Csharp, ou outras linguaguens como componente COM/ActiveX de quadro de quartil e calculos de Estatisticas
+Exemplo de criação de um componente DLL em CSharp para ser utilizado em Csharp ou em outras linguaguens como componente COM/ActiveX para fazer Estatisticas e Cálculo do Quadro de Quartil
 
-## Requisitos
+# Requisitos
 
-- Registro da DLL se for utilizado como Componente COM/ActiveX por outras linguaguens
+- Registro da DLL se for utilizado como Componente COM/ActiveX por outras linguaguens (Delphi, Visual Basic, FoxPro)
 
-# O que você vai encontrar neste projeto
+## O que você vai encontrar neste projeto
 
-- **FoxPro** - Utilização do uso como componente, chamando a DLL e retornando Dados Json.
 - **DLL** - Criação de DLL em Csharp
-- **Json** - Uso Calculo em Csharp e Serealização para ser lido e descerealizado por outras linguaguens   
-- **COM** - Uso de Componentes Objetos COM/ActiveX , DLLs. DLLs .NET que precisam ser chamadas pelo rundll32 que devem ter classes ComVisible(true) e ser registradas com regasm.exe para interoperação
+- **FoxPro** - Utilização do uso como componente DLL e consumindo dados retornados em formato Json.
+- **Json** - Serialização e desserialização utilizado nas linguaguens   
+- **COM** - Criação de Componente Objetos COM/ActiveX em .NET onde para ser usadas por outras linguaguens (rundll32), devem ter e serem criadas como ComVisible(true) e serem registradas para interoperação com registro (regasm.exe). 
 
+## Execução da aplicação em outras linguaguens
 
-## Execução correto em linguaguens
-
-Para executar a DLL ser executada como componente visivel em linguaguens diversas como Visual Basic, Delphi , FoxPro necessário corrigir o caminho do sistema no arquivo BAT:
-
-Registrar arquivo .BAT 
+A DLL deve ser registrada com o seguinte .BAT, necessário ajustar diretório do sistema no arquivo BAT:
 
 ```bash
 	@ECHO OFF
@@ -29,6 +26,6 @@ Registrar arquivo .BAT
 	EXIT
 ```
 
-## Calculo Quartil
+# Calculo Quartil
 
 Os quartis são medidas estatísticas que dividem um conjunto de dados ordenados (do menor para o maior) em quatro partes iguais, cada uma contendo 25% dos dados. Eles são fundamentais para entender a distribuição e a dispersão dos dados, indo além do que uma simples média pode mostrar.

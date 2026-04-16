@@ -2,10 +2,6 @@
 
 Exemplo de criação de um componente DLL em CSharp para ser utilizado em Csharp ou em outras linguaguens como componente COM/ActiveX para fazer Estatisticas e Cálculo do Quadro de Quartil
 
-# Requisitos
-
-- Registro da DLL se for utilizado como Componente COM/ActiveX por outras linguaguens (Delphi, Visual Basic, FoxPro)
-
 ## O que você vai encontrar neste projeto
 
 - **DLL** - Criação de DLL em Csharp
@@ -15,7 +11,7 @@ Exemplo de criação de um componente DLL em CSharp para ser utilizado em Csharp
 
 ## Execução da aplicação em outras linguaguens
 
-A DLL deve ser registrada com o seguinte .BAT, necessário ajustar diretório do sistema no arquivo BAT:
+A DLL deve ser registrada com o seguinte .BAT, necessário ajustar diretório do sistema no arquivo BAT, para ser utilizado como Componente COM/ActiveX por outras linguaguens (Delphi, Visual Basic, FoxPro)
 
 ```bash
 	@ECHO OFF
